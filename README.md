@@ -132,6 +132,10 @@ voice-cloning/
 └── src/
 
 🚀 Step 8 — Run the Project
+ run sample_tts.py
+ run python.py
+ run main.py
+ run app.py
 
 Example command to generate cloned speech:
 
