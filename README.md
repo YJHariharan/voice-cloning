@@ -57,62 +57,93 @@ Voice-Cloning/
 Due to GitHub’s storage limits, the trained models and datasets are hosted externally.
 
 📦 **Download Here:**  
-🔗 [Google Drive – Voice Cloning Project Files (20 GB)](https://drive.google.com/your-link-here)  
+🔗 https://drive.google.com/drive/folders/1IdUcPRMrdm8sL6u1uU8u8CcXvb4OtpK3?usp=drive_link
 *(Includes trained models, datasets, and example cloned audio.)*
 
 ---
 
 ## 🚀 How to Run
-### 1. Clone this repository
-```bash
+🧱 Step 1 — Clone the Repository
 git clone https://github.com/yourusername/voice-cloning.git
 cd voice-cloning
 
-2. Install dependencies
+🐍 Step 2 — Create a Virtual Environment
+python -m venv venv
+
+⚡ Step 3 — Activate the Virtual Environment
+
+Windows (CMD / PowerShell):
+
+venv\Scripts\activate
+
+
+Mac / Linux / WSL:
+
+source venv/bin/activate
+
+
+✅ You’ll see (venv) appear in your terminal, which means the virtual environment is active.
+
+📦 Step 4 — Upgrade PIP
+pip install --upgrade pip
+
+📚 Step 5 — Install Dependencies
+
+If you have a requirements.txt file:
+
 pip install -r requirements.txt
 
-3. Download model files
 
-Place the downloaded models in the /models directory.
+Or, if you’re setting up manually (for your voice cloning stack):
 
-4. Run the voice cloning pipeline
-python src/clone_voice.py --input_text "Hello, welcome to the voice cloning demo!" --speaker sample.wav
+pip install torch torchvision torchaudio
+pip install tensorflow==2.12.0
+pip install librosa soundfile numpy matplotlib
+pip install pydub tqdm
 
-🖼️ Output
+🎧 Step 6 — Install FFmpeg (for audio processing)
 
-The generated speech will be saved under /output.
+Windows:
 
-Example:
+Download from https://ffmpeg.org/download.html
+
+Extract and add the /bin path to your System Environment Variables.
+
+Linux (Ubuntu/Debian):
+
+sudo apt update
+sudo apt install ffmpeg
+
+
+Mac (Homebrew):
+
+brew install ffmpeg
+
+🧠 Step 7 — Add Checkpoints, Models, and Samples
+
+Since large files aren’t uploaded to GitHub, download them from your Google Drive link and place them like this:
+
+voice-cloning/
+├── checkpoints/
+├── models/
+├── tts_samples/
+└── src/
+
+🚀 Step 8 — Run the Project
+
+Example command to generate cloned speech:
+
+python src/clone_voice.py --input_text "Hello! This is an AI cloned voice." --speaker sample.wav
+
+💾 Step 9 — Output Location
+
+Generated audio files will appear in:
 
 output/
 └── cloned_voice.wav
 
+🧹 Step 10 — Deactivate the Virtual Environment
 
-🎧 The cloned voice reproduces tone, pitch, and rhythm similar to the original speaker.
+When you’re done:
 
-📊 Inference & Conclusion
-
-This project demonstrates how deep learning models can effectively reproduce human-like voices using limited data.
-By integrating speaker embeddings with neural vocoders, the system achieves realistic, clear, and expressive voice synthesis.
-
-Future Enhancements:
-
-Multi-language voice cloning
-
-Emotion and tone control
-
-Real-time voice modulation for live applications
-
-👨‍💻 Author
-
-Y.J. Hariharan
-Artificial Intelligence Intern | Data Analyst | Developer
-📍 India
-💼 LinkedIn
-
-📸 Instagram
-
-📜 License
-
-This project is open-source and available under the MIT License.
-Feel free to use, modify, and share with proper attribution.
+deactivate
