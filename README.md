@@ -41,3 +41,78 @@ This project focuses on implementing and evaluating a **neural speech synthesis 
 ---
 
 ## 🧩 Project Structure
+Voice-Cloning/
+├── data/ # Dataset (Not included due to size)
+├── models/ # Pre-trained models (Download link below)
+├── src/ # Python source code
+├── output/ # Generated audio samples
+├── requirements.txt # Dependencies list
+├── README.md # Project documentation
+└── report.pdf # Final report document
+
+
+---
+
+## 🗃️ Download Large Files
+Due to GitHub’s storage limits, the trained models and datasets are hosted externally.
+
+📦 **Download Here:**  
+🔗 [Google Drive – Voice Cloning Project Files (20 GB)](https://drive.google.com/your-link-here)  
+*(Includes trained models, datasets, and example cloned audio.)*
+
+---
+
+## 🚀 How to Run
+### 1. Clone this repository
+```bash
+git clone https://github.com/yourusername/voice-cloning.git
+cd voice-cloning
+
+2. Install dependencies
+pip install -r requirements.txt
+
+3. Download model files
+
+Place the downloaded models in the /models directory.
+
+4. Run the voice cloning pipeline
+python src/clone_voice.py --input_text "Hello, welcome to the voice cloning demo!" --speaker sample.wav
+
+🖼️ Output
+
+The generated speech will be saved under /output.
+
+Example:
+
+output/
+└── cloned_voice.wav
+
+
+🎧 The cloned voice reproduces tone, pitch, and rhythm similar to the original speaker.
+
+📊 Inference & Conclusion
+
+This project demonstrates how deep learning models can effectively reproduce human-like voices using limited data.
+By integrating speaker embeddings with neural vocoders, the system achieves realistic, clear, and expressive voice synthesis.
+
+Future Enhancements:
+
+Multi-language voice cloning
+
+Emotion and tone control
+
+Real-time voice modulation for live applications
+
+👨‍💻 Author
+
+Y.J. Hariharan
+Artificial Intelligence Intern | Data Analyst | Developer
+📍 India
+💼 LinkedIn
+
+📸 Instagram
+
+📜 License
+
+This project is open-source and available under the MIT License.
+Feel free to use, modify, and share with proper attribution.
