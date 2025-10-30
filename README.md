@@ -1,5 +1,7 @@
 # 🧠 Voice Cloning using Deep Learning
 
+## NOTE : It can only run on cmd , this is the sample version , will update the advanced version !
+
 ## 📌 Overview
 The **Voice Cloning Project** is a deep learning–based system that can replicate a human voice using a small sample of speech.  
 By combining **Text-to-Speech (TTS)** synthesis, **Speaker Embeddings**, and **Neural Vocoders**, this project generates natural and expressive cloned speech that closely matches the target speaker’s tone, pitch, and style.
